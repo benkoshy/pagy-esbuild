@@ -1,4 +1,15 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green"><%= notice %> </p>
+<p> Normal Navigation</p>
+<%== pagy_nav(@pagy) %>
+<br>
+<p> Javascript pagy helper</p>
+<div id="nav" data-controller="pagy-initializer">
+  <%== pagy_nav_js(@pagy) %>
+</div>
+<p> Javascript Combo helper</p>
+<div id="combo" data-controller="pagy-initializer">
+  <%== pagy_combo_nav_js(@pagy) %>
+</div>
 <h1>Posts</h1>
 <div id="posts">
   <% @posts.each do |post| %>

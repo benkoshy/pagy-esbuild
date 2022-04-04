@@ -1,24 +1,33 @@
-# README
+### What is this?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This a demo app, to help you report issues / bugs / debug on [pagy](https://github.com/ddnexus/pagy). If the documentation is lacking:
 
-Things you may want to cover:
+![](app/assets/images/please.gif)
 
-* Ruby version
+Please make a PR to the documentation, or otherwise, msg someone in the [pagy gitter](https://gitter.im/ruby-pagy/Lobby) forums.
 
-* System dependencies
+### Steps
 
-* Configuration
+To Run:
 
-* Database creation
+`rake db:seed`
 
-* Database initialization
+`./bin/dev`
 
-* How to run the test suite
+### Reproduce Your issue
 
-* Services (job queues, cache servers, search engines, etc.)
+`git checkout -b pagy-bug`
 
-* Deployment instructions
+Please push to your own remote, and include it in your bug report to pagy.
 
-* ...
+### Don't forget to register your stimulus js controllers!
+
+esbuild ain't webpacker. There's no glob which automatically registers all controllers. Or you might have to write or use a third party library for the same functionality.
+
+```shell
+./bin/rails stimulus:manifest:update
+```
+
+
+
+
