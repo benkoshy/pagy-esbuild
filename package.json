@@ -7,6 +7,6 @@
     "esbuild": "0.14.30"
   },
   "scripts": {
-    "build": "NODE_PATH=\"$(bundle show 'pagy')/gem/javascripts\" esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
+    "build": "NODE_PATH=\"$(bundle show 'pagy')/javascripts\" esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   }
 }

@@ -141,6 +141,7 @@
 # so require this extra only if you need the unstyled version
 # See https://ddnexus.github.io/pagy/extras/navs
 require 'pagy/extras/pagy'
+Rails.application.config.assets.paths << Pagy.root.join('javascripts') # uncomment.
 
 # Semantic extra: Add nav, nav_js and combo_nav_js helpers for Semantic UI pagination
 # See https://ddnexus.github.io/pagy/extras/semantic
