@@ -8,8 +8,8 @@
 </div>
 <p> Javascript Combo helper</p>
 
-<%= turbo_frame_tag "test" do  %>
-<p>turbo from is here:</p>
+<%#= turbo_frame_tag "test" do  %>
+<p>We are inside a turbo frame!</p>
 <div id="combo" data-controller="pagy-initializer">
   <%== pagy_combo_nav_js(@pagy) %>
 </div>
@@ -21,6 +21,6 @@
   <% end %>
 </div>
 
-<% end %>
+<%# end %>
 
 <%= link_to "New post", new_post_path %>

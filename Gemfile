@@ -71,4 +71,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "pagy", git: 'https://github.com/ddnexus/pagy.git', branch: 'dev'
+gem "pagy", git: 'https://github.com/ddnexus/pagy.git', branch: 'master'
