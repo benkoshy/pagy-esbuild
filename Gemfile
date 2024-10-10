@@ -71,4 +71,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "pagy", git: 'https://github.com/ddnexus/pagy.git', branch: 'master'
+gem 'pagy', '~> 9.1' # omit patch digit
